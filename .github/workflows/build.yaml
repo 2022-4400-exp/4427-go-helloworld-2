@@ -28,7 +28,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker buildx build --platform linux/amd64,linux/arm/v7 . -t ghcr.io/2022-4400-exp/4437-go-helloworld-2:${{ github.sha }} --push
+          docker buildx build --platform linux/amd64,linux/arm/v7 . -t ghcr.io/2022-4400-exp/4427-go-helloworld-2:${{ github.sha }} --push
 
 
       - name: Update manifest image tag
